@@ -1,0 +1,6 @@
+main: main.cpp tests.o 
+    g++ main.cpp tests.o -o main
+tests.o: tests.cpp grid.o
+    g++ tests.cpp grid.o -o tests.o
+grid.o: grid.cpp
+    g++ grid.cpp -o grid.o
